@@ -1,8 +1,18 @@
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data.
+
+This dataset is publicly available on Kaggle and contains information about individuals and their respective medical insurance charges. Each row in the dataset represents a unique customer profile, with various demographic and health-related attributes.
+
+| Variable   | Meaning                                                              | Units                                  |
+|------------|----------------------------------------------------------------------|----------------------------------------|
+| age        | Age of primary beneficiary                                           | years                                  |
+| sex        | insurance contractor gender, female, male                            | male / female                          |
+| bmi        | Body mass index, providing an understanding of body, weights that are relatively high or low relative to height, objective index of body weight (kg / m ^ 2) using the ratio of height to weight, ideally 18.5 to 24.9                                                      | kg/m²                                  |
+| children   | Number of children covered by health insurance / Number of dependents               | count                                  |
+| smoker     | Smoking status of the policyholder                                   | yes / no                               |
+| region     | Residential region of the policyholder in the US                     | northeast / southeast / southwest / northwest |
+| charges    | Annual medical insurance charges billed by the insurer              | USD                                    |
 
 ## Business Case: Predicting Medical Insurance Costs
 
