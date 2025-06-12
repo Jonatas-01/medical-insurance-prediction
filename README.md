@@ -4,6 +4,14 @@
 ## Dataset Content
 * Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
 
+## Business Case: Predicting Medical Insurance Costs
+A mid-sized health insurance provider operating nationally, specializes in offering customizable medical insurance plans for individuals and families. As the industry becomes increasingly competitive and data-driven, the company is seeking to modernize its underwriting and pricing strategy by incorporating advanced analytics and machine learning into its operations. 
+Traditionally, the company has relied on actuarial assumptions, broad demographic groupings, and legacy statistical models to estimate customer insurance premiums. While these methods have served as a baseline, they lack the precision and adaptability needed in today's market, where customers demand fairness, personalization, and transparency in pricing. Moreover, the company faces challenges such as: 
+- Rising healthcare costs and claims volatility.
+- Pressure to offer more competitive pricing while maintaining profit margins.
+- Increasing regulatory and customer scrutiny regarding how prices are determined.
+
+The company recognizes the need to adopt a more data-driven, predictive approach to insurance pricing to enhance its decision-making capabilities and remain competitive in the evolving market.
 
 ## Business Requirements
 * Describe your business requirements
