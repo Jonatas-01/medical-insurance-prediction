@@ -2,15 +2,21 @@
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
+* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data.
 
 ## Business Case: Predicting Medical Insurance Costs
-A growing company that provides health insurance to individuals and families recognizes the need to improve how it determines insurance costs. As the business expands, it becomes increasingly important to calculate premiums based on each customer’s personal information, ensuring prices are both competitive and fair. Moving away from generalized pricing models, the company aims to deliver more accurate and personalized cost estimates that better reflect individual risk profiles.    
+
+A growing company that provides health insurance to individuals and families recognizes the need to improve how it determines insurance costs. As the business expands, it becomes increasingly important to calculate premiums based on each customer’s personal information, ensuring prices are both competitive and fair. Moving away from generalized pricing models, the company aims to deliver more accurate and personalized cost estimates that better reflect individual risk profiles.
+
 This initiative aligns with the company’s strategic goals of becoming more customer-centric and insight-driven. By enhancing pricing accuracy, the company can build greater trust, strengthen customer relationships, and reduce financial risk—while also positioning itself as a modern, transparent leader in the health insurance market.
 
 ## Business Requirements
-* Describe your business requirements
 
+* ### Accurate Cost Prediction:
+  * Develop a reliable way to estimate medical insurance costs for new customers using the information they provide—such as age, lifestyle habits, and family details. This ensures that each quote reflects the customer’s unique profile.
+
+* ### Insights from Data:
+  * Analyze historical customer data to uncover the key factors that influence insurance costs. These insights will help guide pricing strategies, identify customer segments with higher risk, and support data-driven business decisions.
 
 ## Hypothesis and how to validate?
 * List here your project hypothesis(es) and how you envision validating it (them) 
