@@ -19,8 +19,18 @@ This initiative aligns with the company’s strategic goals of becoming more cus
   * Analyze historical customer data to uncover the key factors that influence insurance costs. These insights will help guide pricing strategies, identify customer segments with higher risk, and support data-driven business decisions.
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
 
+To better understand what influences medical insurance costs, we propose the following hypotheses. Each hypothesis will be tested using appropriate analysis techniques to confirm or reject its validity.
+
+| Hypothesis                                                                 | Rationale                                                                 | Validation Method                                                                 |
+|----------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **H1: Insurance charges increase with age.**                              | Older individuals are more likely to require medical services.           | Analyze the correlation between age and charges; visualize with scatter plots.   |
+| **H2: Higher BMI leads to higher insurance costs.**                       | High BMI may indicate health conditions like obesity or heart disease.   | Examine BMI vs. charges using regression analysis or scatter plots.              |
+| **H3: Smokers are charged significantly more than non-smokers.**          | Smoking is linked to higher health risks and medical costs.              | Compare average charges between smokers and non-smokers using statistical tests. |
+| **H4: Customers with more children tend to have higher costs.**           | More dependents may lead to higher coverage needs and expenses.          | Compare average charges across different numbers of children.                    |
+| **H5: Region affects insurance costs.**                                   | Healthcare costs can vary by region due to economic and service factors. | Analyze average charges by region using group comparisons or ANOVA tests.        |
+
+Each validated hypothesis will help the company better understand cost drivers and refine its pricing strategy accordingly.
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
 * List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
