@@ -22,11 +22,11 @@ This initiative aligns with the company’s strategic goals of becoming more cus
 
 ## Business Requirements
 
-* ### Accurate Cost Prediction:
-  * Develop a reliable way to estimate medical insurance costs for new customers using the information they provide—such as age, lifestyle habits, and family details. This ensures that each quote reflects the customer’s unique profile.
-
 * ### Insights from Data:
   * Analyze historical customer data to uncover the key factors that influence insurance costs. These insights will help guide pricing strategies, identify customer segments with higher risk, and support data-driven business decisions.
+
+* ### Accurate Cost Prediction:
+  * Develop a reliable way to estimate medical insurance costs for new customers using the information they provide—such as age, lifestyle habits, and family details. This ensures that each quote reflects the customer’s unique profile.
 
 ## Hypothesis and how to validate?
 
@@ -49,12 +49,41 @@ Each validated hypothesis will help the company better understand cost drivers a
 ## ML Business Case
 * In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
 
+## Dashboard Design (Streamlit App User Interface)
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
+### Page 1: Quick Project Summary
 
+* Quick project summary
+  * Project Terms & Jargon
+  * Describe Project Dataset
+  * State Business Requirements
 
+### Page 2: Medical Insurance Price Analysis
+
+* Before the analysis, we knew we wanted this page to answer business requirement 1, but we couldn't know in advance which plots would need to be displayed.
+* After data analysis, we agreed with stakeholders that the page will:
+  * State business requirement 1
+  * Checkbox: data inspection on dataset (display the number of rows and columns in the data, and display the first ten rows of the data)
+  * Display the most correlated variables to medical charges and the conclusions
+  * Checkbox: Individual plots showing the charges for each correlated variable
+  * Checkbox: Parallel plot using Churn and correlated variables
+
+### Page 3: Madical Insurance Charges Prediction
+
+* State business requirement 2
+* Set of widget inputs related to the custumer profile. Each set of inputs is related to a given ML task to predict custumers charges.
+* "Run predictive analysis" button that processes the custumer data through our ML pipelines and predicts the insurance charges.
+
+### Page 4: Project Hypotheses and Validation
+
+* Before the analysis, we knew we wanted this page to describe each project hypothesis, the conclusions, and how we validated each. After the data analysis, we can report that:
+
+### Page 5: Model Evaluation and Feature Importance
+
+* Considerations and conclusions after the pipeline is trained
+* Present ML pipeline steps
+* Feature importance
+* Pipeline performance
 
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
