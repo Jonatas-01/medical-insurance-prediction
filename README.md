@@ -18,7 +18,7 @@ This dataset is publicly available on Kaggle and contains information about indi
 
 A growing company that provides health insurance to individuals and families recognizes the need to improve how it determines insurance costs. As the business expands, it becomes increasingly important to calculate premiums based on each customer’s personal information, ensuring prices are both competitive and fair. Moving away from generalized pricing models, the company aims to deliver more accurate and personalized cost estimates that better reflect individual risk profiles.
 
-This initiative aligns with the company’s strategic goals of becoming more customer-centric and insight-driven. By enhancing pricing accuracy, the company can build greater trust, strengthen customer relationships, and reduce financial risk—while also positioning itself as a modern, transparent leader in the health insurance market.
+This initiative aligns with the company’s strategic goals of becoming more customer-centric and insight-driven. By enhancing pricing accuracy, the company can build greater trust, strengthen customer relationships, and reduce financial risk while also positioning itself as a modern, transparent leader in the health insurance market.
 
 ## Business Requirements
 
@@ -26,7 +26,7 @@ This initiative aligns with the company’s strategic goals of becoming more cus
   * Analyze historical customer data to uncover the key factors that influence insurance costs. These insights will help guide pricing strategies, identify customer segments with higher risk, and support data-driven business decisions.
 
 * ### Accurate Cost Prediction:
-  * Develop a reliable way to estimate medical insurance costs for new customers using the information they provide—such as age, lifestyle habits, and family details. This ensures that each quote reflects the customer’s unique profile.
+  * Develop a reliable way to estimate medical insurance costs for new customers using the information they provide such as age, lifestyle habits, and family details. This ensures that each quote reflects the customer’s unique profile.
 
 ## Hypothesis and how to validate?
 
