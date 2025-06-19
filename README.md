@@ -43,11 +43,12 @@ To better understand what influences medical insurance costs, we propose the fol
 Each validated hypothesis will help the company better understand cost drivers and refine its pricing strategy accordingly.
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
+
 * List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
 
-
 ## ML Business Case
-* In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
+
+* In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course
 
 ## Dashboard Design (Streamlit App User Interface)
 
@@ -59,7 +60,12 @@ Each validated hypothesis will help the company better understand cost drivers a
   * Dataset Overview
   * State Business Requirements
 
-### Page 2: Medical Insurance Price Analysis
+### Page 2: Project Hypotheses and Validation
+
+* We report on whether the 5 hypotheses we posed earlier are correct
+* Checkbox to display the corresponding plot for each hypothesis
+  
+### Page 3: Medical Insurance Price Analysis
 
 * Before the analysis, we knew we wanted this page to answer business requirement 1, but we couldn't know in advance which plots would need to be displayed.
 * After data analysis, we agreed with stakeholders that the page will:
@@ -69,15 +75,11 @@ Each validated hypothesis will help the company better understand cost drivers a
   * Checkbox: Individual plots showing the charges for each correlated variable
   * Checkbox: Parallel plot using Churn and correlated variables
 
-### Page 3: Madical Insurance Charges Prediction
+### Page 4: Medical Insurance Charges Prediction
 
 * State business requirement 2
 * Set of widget inputs related to the custumer profile. Each set of inputs is related to a given ML task to predict custumers charges.
 * "Run predictive analysis" button that processes the custumer data through our ML pipelines and predicts the insurance charges.
-
-### Page 4: Project Hypotheses and Validation
-
-* Before the analysis, we knew we wanted this page to describe each project hypothesis, the conclusions, and how we validated each. After the data analysis, we can report that:
 
 ### Page 5: Model Evaluation and Feature Importance
 
