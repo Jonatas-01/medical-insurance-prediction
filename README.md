@@ -54,8 +54,9 @@ Each validated hypothesis will help the company better understand cost drivers a
 ### Page 1: Quick Project Summary
 
 * Quick project summary
+  * Project Summary
   * Project Terms & Jargon
-  * Describe Project Dataset
+  * Dataset Overview
   * State Business Requirements
 
 ### Page 2: Medical Insurance Price Analysis
