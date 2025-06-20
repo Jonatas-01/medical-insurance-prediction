@@ -29,7 +29,7 @@ def app_correlation():
         st.dataframe(corr_matrix)
 
     # Analysis conclusions
-    st.subheader("Correlation Analysis")
+    st.subheader("Correlation Conclusions")
     st.success("""
     - **Age vs Charges**: Moderate positive correlation – insurance charges tend to increase with age.
     - **BMI vs Charges**: Weak correlation – BMI alone is not a strong indicator.
@@ -41,7 +41,7 @@ def app_correlation():
 
     # Load processed dataset
     st.title("Correlation Analysis on Feature Engineered Data")
-    st.write("This page analyzes the correlation between the engineered features and the insurance charges.")
+    st.write("Underneath, there is a correlation analysis on the feature engineered dataset, used to train the model and make predictions.")
 
     # Load processed dataset
     df = load_feature_engineering_data()  # custom function to load the transformed dataset

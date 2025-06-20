@@ -65,15 +65,12 @@ Each validated hypothesis will help the company better understand cost drivers a
 * We report on whether the 5 hypotheses we posed earlier are correct
 * Checkbox to display the corresponding plot for each hypothesis
   
-### Page 3: Medical Insurance Price Analysis
+### Page 3: Correlation Analysis
 
-* Before the analysis, we knew we wanted this page to answer business requirement 1, but we couldn't know in advance which plots would need to be displayed.
-* After data analysis, we agreed with stakeholders that the page will:
-  * State business requirement 1
-  * Checkbox: data inspection on dataset (display the number of rows and columns in the data, and display the first ten rows of the data)
-  * Display the most correlated variables to medical charges and the conclusions
-  * Checkbox: Individual plots showing the charges for each correlated variable
-  * Checkbox: Parallel plot using Churn and correlated variables
+* Correlation matrix to visualize relationships between variables before feature engineering
+* Correlation conclusions and considarations
+* Show correlation matrix heatmap of the feature enginereed dataset
+* Conclusions of correlated features after feature engineering
 
 ### Page 4: Medical Insurance Charges Prediction
 
