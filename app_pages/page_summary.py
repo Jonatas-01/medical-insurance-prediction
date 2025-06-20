@@ -27,7 +27,7 @@ def page_summary():
             - **Model Pipeline**: A structured sequence of preprocessing steps and a model, wrapped into a single object for deployment.
             - **Grid Search**: An approach to find the best model parameters using exhaustive testing with cross-validation.
             """)
-   
+
       st.write("### Data Overview")
       st.dataframe(load_data())
       
