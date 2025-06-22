@@ -1,0 +1,7 @@
+Feature,Importance
+smoker,0.75945467
+age,0.1645452
+children,0.036147255
+bmi,0.020019697
+region,0.014030804
+sex,0.005802369
