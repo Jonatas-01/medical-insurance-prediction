@@ -17,6 +17,12 @@ def app_predict():
         .tolist()
     )
 
+    st.info(
+        f"**Business Requirements 2: Accurate Cost Prediction**\n\n"
+        f"This page allows users to predict insurance charges based on customer information by providing a "
+        f"reliable way to estimate medical insurance costs using inputs such as age, lifestyle habits, and family details."
+        )
+
     # Page title
     st.title("Predict Insurance Charges")
     st.write("Enter customer information to estimate their medical insurance cost.")
