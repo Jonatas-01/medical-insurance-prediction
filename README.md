@@ -1,4 +1,4 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ![Project Image Representation](images/document_image.jpg)
 
 ## Dataset Content
 
@@ -16,14 +16,14 @@ This dataset is publicly available on Kaggle and contains information about indi
 
 ## Business Case: Predicting Medical Insurance Costs
 
-A growing company that provides health insurance to individuals and families recognizes the need to improve how it determines insurance costs. As the business expands, it becomes increasingly important to calculate premiums based on each customer’s personal information, ensuring prices are both competitive and fair. Moving away from generalized pricing models, the company aims to deliver more accurate and personalized cost estimates that better reflect individual risk profiles.
+A growing company that provides health insurance to individuals and families recognizes the need to improve how it determines insurance costs. As the business expands, it becomes increasingly important to calculate premiums based on each customer’s personal information, ensuring prices are both competitive and fair. The company aims to leverage data analytics and machine learning to enhance its pricing strategy, moving away from a one-size-fits-all approach to a more personalized model.
 
 This initiative aligns with the company’s strategic goals of becoming more customer-centric and insight-driven. By enhancing pricing accuracy, the company can build greater trust, strengthen customer relationships, and reduce financial risk while also positioning itself as a modern, transparent leader in the health insurance market.
 
 ## Business Requirements
 
 * ### Insights from Data:
-  * Analyze historical customer data to uncover the key factors that influence insurance costs. These insights will help guide pricing strategies, identify customer segments with higher risk, and support data-driven business decisions.
+  * Analyze historical customer data to uncover the key factors that influence insurance costs. These insights will help guide pricing strategies, ensuring that the company can offer competitive rates while maintaining profitability.
 
 * ### Accurate Cost Prediction:
   * Develop a reliable way to estimate medical insurance costs for new customers using the information they provide such as age, lifestyle habits, and family details. This ensures that each quote reflects the customer’s unique profile.
@@ -38,7 +38,7 @@ To better understand what influences medical insurance costs, we propose the fol
 | **H2: Higher BMI leads to higher insurance costs.**                       | High BMI may indicate health conditions like obesity or heart disease.   | Examine BMI vs. charges using regression analysis or scatter plots.              |
 | **H3: Smokers are charged significantly more than non-smokers.**          | Smoking is linked to higher health risks and medical costs.              | Compare average charges between smokers and non-smokers using statistical tests. |
 | **H4: Customers with more children tend to have higher costs.**           | More dependents may lead to higher coverage needs and expenses.          | Compare average charges across different numbers of children.                    |
-| **H5: Region affects insurance costs.**                                   | Healthcare costs can vary by region due to economic and service factors. | Analyze average charges by region using group comparisons or ANOVA tests.        |
+| **H5: Region affects insurance costs.**                                   | Healthcare costs can vary by region due to economic and service factors. | Analyze average charges by region using group comparisons tests.        |
 
 Each validated hypothesis will help the company better understand cost drivers and refine its pricing strategy accordingly.
 
