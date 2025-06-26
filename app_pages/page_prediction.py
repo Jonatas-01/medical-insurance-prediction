@@ -77,7 +77,7 @@ def DrawInputsWidgets():
         feature = "bmi"
         st_widget = st.number_input(
             label=feature,
-            value=df[feature].median(),
+            value=24.0,
             min_value= 16.1,
             max_value= 55.1,
             step= 0.1,
