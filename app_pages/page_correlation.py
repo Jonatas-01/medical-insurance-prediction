@@ -39,7 +39,6 @@ def app_correlation():
     After feature engineering, the model will be able to capture more complex relationships.
     """)
 
-    # Load processed dataset
     st.title("Correlation Analysis on Feature Engineered Data")
     st.write("Underneath, there is a correlation analysis on the feature engineered dataset, used to train the model and make predictions.")
 
@@ -56,13 +55,15 @@ def app_correlation():
     fig, ax = plt.subplots(figsize=(12, 8))
     sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap="coolwarm", center=0)
     st.pyplot(fig)
-
-    # Display correlation to charges
-    st.subheader("Feature Correlation with Charges")
-    st.dataframe(charges_corr.to_frame(name="Correlation with Charges"))
-
+    
     # Generate conclusions
     st.subheader("Conclusions")
+    st.success("The correlation matrix show the linear correlation between each customer attribute and the insurance charges. " \
+    "As expected, smoking status has a strong influence on costs, showing a strong negative correlation "
+    "(meaning smokers tend to incur significantly higher charges). Age and BMI also show moderate " \
+    "positive correlations, suggesting older individuals and those with higher BMI tend to face higher " \
+    "costs. Other variables like region and sex appear to have less direct linear impact on charges, " \
+    "though they may still contribute in more complex ways to the final prediction model.")
     st.markdown(generate_conclusions(charges_corr))
 
 

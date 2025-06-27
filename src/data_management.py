@@ -12,5 +12,5 @@ def load_pkl_file(file_path):
     return joblib.load(filename=file_path)
 
 def load_feature_engineering_data():
-    df = pd.read_csv('outputs/datasets/engineered/insurance_engineered.csv')
+    df = pd.read_csv('outputs/datasets/feature_engineered/insurance_fe.csv')
     return df
