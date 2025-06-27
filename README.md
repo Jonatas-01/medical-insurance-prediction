@@ -2,7 +2,7 @@
 
 ## Dataset Content
 
-This dataset is publicly available on Kaggle and contains information about individuals and their respective medical insurance charges. Each row in the dataset represents a unique customer profile, with various demographic and health-related attributes.
+This dataset is publicly available on [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) and contains information about individuals and their respective medical insurance charges. Each row in the dataset represents a unique customer profile, with various demographic and health-related attributes.
 
 | Variable   | Meaning                                                              | Units                                  |
 |------------|----------------------------------------------------------------------|----------------------------------------|
