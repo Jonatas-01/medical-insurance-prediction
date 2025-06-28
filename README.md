@@ -119,7 +119,6 @@ Each validated hypothesis will help the company better understand cost drivers a
 
 * The App live link is: https://insurance-predict-4eed0585c61b.herokuapp.com/
 * Set the runtime.txt Python version to a [Heroku-24](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* "heroku create --stack heroku-20" and "heroku stack:set heroku-20" was used in IDE.
 * The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
