@@ -44,11 +44,35 @@ Each validated hypothesis will help the company better understand cost drivers a
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
 
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
+* **Business Requirement 1: Insights from Data**
+  * We will inspect the dataset to identify key factors influencing insurance costs.
+  * We will visualize the relationships between variables to uncover patterns and correlations.
+  * We will vizualize feature engineered dataset to understand how the features relate to the target variable (charges).
+
+* **Business Requirement 2: Accurate Cost Prediction**
+  * We will develop a machine learning model to predict insurance costs based on customer profiles.
+  * We will create a user interface that allows users to input customer data and receive predicted insurance charges.
+  * We will evaluate the model's performance and feature importance to ensure transparency and reliability.
 
 ## ML Business Case
 
-* In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course
+### Predict Medical Insurance Charges
+
+**Regression Model:**
+
+* We wanted a model that predicts the medical insurance charges based on customer profiles. The model aims to provide accurate estimates of insurance costs, helping the company set competitive and fair premiums. The target variable is the annual medical insurance charges
+  * Target Variable: `charges`(float)
+  * Features: `age`, `sex`, `bmi`, `children`, `smoker`, `region`
+  * Best model: `XGBoost Regressor`
+  
+* The ideal outcome is the ability to input customer data and receive a predicted insurance charge, which can be used to inform pricing strategies.
+* **Model Success Metrics:**
+  * Achieve at least 80% accuracy in predicting insurance charges, minimizing the errors of overcharged or low charges.
+* **Performance Metrics:**
+  * R² Score: The model explains 89.1% of the variance in insurance charges on training data and 89.8% on test data. This indicates a strong and generalizable fit.
+  * MAE (Mean Absolute Error): On average, predictions are within ~2,100–2,400 units of the actual charges.
+  * MSE & RMSE: Low values and minimal difference between training and testing metrics show the model is not overfitting and is stable.
+  * Balanced RMSE: Consistency between training and test RMSE means the model performs reliably across unseen data.
 
 ## Dashboard Design (Streamlit App User Interface)
 
@@ -86,45 +110,62 @@ Each validated hypothesis will help the company better understand cost drivers a
 * Pipeline performance
 
 ## Unfixed Bugs
+
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
 ## Deployment
+
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://insurance-predict-4eed0585c61b.herokuapp.com/
 * Set the runtime.txt Python version to a [Heroku-24](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
+* "heroku create --stack heroku-20" and "heroku stack:set heroku-20" was used in IDE.
 * The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
+## Important configuration files
+
+* `setup.sh` should contain the following
+```
+mkdir -p ~/.streamlit/
+echo "\
+[server]\n\
+headless = true\n\
+port = $PORT\n\
+enableCORS = false\n\
+\n\
+" > ~/.streamlit/config.toml
+```
+
+* `Procfile` should contain
+```
+web: sh setup.sh && streamlit run app.py
+```
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
 
+* [Pandas](https://pandas.pydata.org/docs/index.html) - Data analysis and manipulation tool
+* [Numpy](https://numpy.org/doc/stable/index.html) - The fundamental package for scientific computing with Python
+* [Matplotlib](https://matplotlib.org/) - Comprehensive library for creating static, animated and interactive visualisations
+* [Seaborn](https://seaborn.pydata.org/) - Data visualisation library for drawing attractive and informative statistical graphics
+* [Feature-engine](https://feature-engine.trainindata.com/en/latest/) - Transformers to engineer and select features for machine learning models
+* [scikit-learn](https://scikit-learn.org/stable/) - Machine learning library for training the ML model
+* [XGBoost](https://xgboost.readthedocs.io/en/stable/) - Optimised distributed gradient boosting library
+* [Joblib](https://joblib.readthedocs.io/en/stable/) - Tool for dumping pipeline to pickle files
+* [Kaggle](https://pypi.org/project/kaggle/) - Kaggle API functionalit
+* [Streamlit](https://streamlit.io/) - Build the web app.
 
-## Credits 
+## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+### Content
 
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+* The idea was taken from Kaggle, using one of their DataSet.
+* Helper functions and custom classes snippets were used in this project were provided by Code Institute. These are mainly adapted from the predictive analytics module.
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
-
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
-
+* Image for README file was taken from [FreePik](https://www.freepik.com/)
