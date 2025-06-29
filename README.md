@@ -13,6 +13,11 @@ Visit the live project here: [Medical Insurance Project](https://insurance-predi
   - [The rationale to map the business requirements to the Data Visualizations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
   - [ML Business Case](#ml-business-case)
     - [Predict Medical Insurance Charges](#predict-medical-insurance-charges)
+  - [Epics \& User Stories](#epics--user-stories)
+    - [Epic: Insights \& Hypothesis Validation](#epic-insights--hypothesis-validation)
+    - [Epic: Personalized Insurance Quote Generation](#epic-personalized-insurance-quote-generation)
+    - [Epic: Model Development \& Evaluation](#epic-model-development--evaluation)
+    - [Epic: Transparency, Monitoring \& Strategic Decision Support](#epic-transparency-monitoring--strategic-decision-support)
   - [Dashboard Design (Streamlit App User Interface)](#dashboard-design-streamlit-app-user-interface)
     - [Page 1: Quick Project Summary](#page-1-quick-project-summary)
     - [Page 2: Project Hypotheses and Validation](#page-2-project-hypotheses-and-validation)
@@ -111,6 +116,30 @@ Each validated hypothesis will help the company better understand cost drivers a
   * Balanced RMSE: Consistency between training and test RMSE means the model performs reliably across unseen data.
 
 [Back to top](#table-of-contents)
+
+## Epics & User Stories
+
+### Epic: Insights & Hypothesis Validation
+
+- **User Story**: As a data scientist, I want to analyze correlations between features like age, BMI, and charges, So that I can discover the main factors influencing insurance costs.
+- **User Story**: As an insurance provider, I want to validate that factors like smoking status or region significantly impact pricing, So that I can make evidence-based pricing policy decisions.
+- **User Story**: As a user, I want to see how changing certain lifestyle choices affects my quote, So that I understand how to potentially lower my premiums.
+
+### Epic: Personalized Insurance Quote Generation
+
+- **User Story**: As a user, I want to input my personal details, So that I can receive a personalized insurance cost estimate.
+- **User Story**: As a data scientist, I want to deploy a predictive model that runs on real-time inputs, So that users can get instant and reliable insurance cost estimates.
+
+### Epic: Model Development & Evaluation
+
+- **User Story**: As a data scientist, I want to train a regression model using historical customer data, So that we can predict future insurance costs with high accuracy.
+- **User Story**: As a data scientist, I want to evaluate the model using R², MAE, and RMSE, So that I can ensure it generalizes well to new data.
+- **User Story**: As an insurance provider, I want to reduce the risk of over or under charge customers, So that we maintain trust while managing financial risk.
+
+### Epic: Transparency, Monitoring & Strategic Decision Support
+
+- **User Story**: As a data scientist, I want to view feature importance rankings, So that I can explain to stakeholders why the model makes specific predictions.
+- **User Story**: As a user, I want the ability to change certain inputs (like smoking status or BMI) and see how it affects the premium, So that I can explore how lifestyle changes could lower my insurance cost.
 
 ## Dashboard Design (Streamlit App User Interface)
 
