@@ -35,7 +35,7 @@ Visit the live project here: [Medical Insurance Project](https://insurance-predi
     - [Page 3: Correlation Analysis](#page-3-correlation-analysis-1)
     - [Page 4: Medical Insurance Charges Prediction](#page-4-medical-insurance-charges-prediction-1)
     - [Page 5: Model Evaluation and Feature Importance](#page-5-model-evaluation-and-feature-importance-1)
-  - [Code Validation](#code-validation)
+  - [Validation](#validation)
   - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
@@ -287,9 +287,14 @@ The following table outlines manual tests performed to ensure that all five dash
 
 [Back to top](#table-of-contents)
 
-## Code Validation
+## Validation
 
-All code in the app_pages and src directories was validated as conforming to PEP8 standards using CodeInstitute's PEP8 Linter.
+All code within the `app_pages` and `src` directories has been validated for PEP8 compliance using Code Institute’s PEP8 Linter.
+
+- A few files triggered warnings related to line length (long function parameters or URL links), which are not easily breakable without reducing code readability.
+- These warnings do not affect the functionality or performance of the application in any way.
+
+[Back to top](#table-of-contents)
 
 ## Credits
 
