@@ -300,11 +300,11 @@ All code within the `app_pages` and `src` directories has been validated for PEP
 
 ### Content
 
-* The idea was taken from Kaggle, using one of their DataSet.
-* Helper functions and custom classes snippets were used in this project were provided by Code Institute. These are mainly adapted from the predictive analytics module.
+- The project concept was inspired by a publicly available dataset on Kaggle.
+- Several helper functions and custom class snippets used in this project were provided by Code Institute, primarily adapted from their Predictive Analytics module.
 
 ### Media
 
-* Image for README file was taken from [FreePik](https://www.freepik.com/)
+- Image for README file was taken from [FreePik](https://www.freepik.com/)
 
 [Back to top](#table-of-contents)
