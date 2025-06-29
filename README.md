@@ -1,5 +1,31 @@
 # ![Project Image Representation](images/document_image.jpg)
 
+## Table of Contents
+
+- [](#)
+  - [Table of Contents](#table-of-contents)
+  - [Dataset Content](#dataset-content)
+  - [Business Case: Predicting Medical Insurance Costs](#business-case-predicting-medical-insurance-costs)
+  - [Business Requirements](#business-requirements)
+  - [Hypothesis and how to validate](#hypothesis-and-how-to-validate)
+  - [The rationale to map the business requirements to the Data Visualizations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
+  - [ML Business Case](#ml-business-case)
+    - [Predict Medical Insurance Charges](#predict-medical-insurance-charges)
+  - [Dashboard Design (Streamlit App User Interface)](#dashboard-design-streamlit-app-user-interface)
+    - [Page 1: Quick Project Summary](#page-1-quick-project-summary)
+    - [Page 2: Project Hypotheses and Validation](#page-2-project-hypotheses-and-validation)
+    - [Page 3: Correlation Analysis](#page-3-correlation-analysis)
+    - [Page 4: Medical Insurance Charges Prediction](#page-4-medical-insurance-charges-prediction)
+    - [Page 5: Model Evaluation and Feature Importance](#page-5-model-evaluation-and-feature-importance)
+  - [Unfixed Bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+    - [Heroku](#heroku)
+  - [Important configuration files](#important-configuration-files)
+  - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+
 ## Dataset Content
 
 This dataset is publicly available on [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) and contains information about individuals and their respective medical insurance charges. Each row in the dataset represents a unique customer profile, with various demographic and health-related attributes.
@@ -20,6 +46,8 @@ A growing company that provides health insurance to individuals and families rec
 
 This initiative aligns with the company’s strategic goals of becoming more customer-centric and insight-driven. By enhancing pricing accuracy, the company can build greater trust, strengthen customer relationships, and reduce financial risk while also positioning itself as a modern, transparent leader in the health insurance market.
 
+[Back to top](#table-of-contents)
+
 ## Business Requirements
 
 * ### Insights from Data:
@@ -28,7 +56,9 @@ This initiative aligns with the company’s strategic goals of becoming more cus
 * ### Accurate Cost Prediction:
   * Develop a reliable way to estimate medical insurance costs for new customers using the information they provide such as age, lifestyle habits, and family details. This ensures that each quote reflects the customer’s unique profile.
 
-## Hypothesis and how to validate?
+[Back to top](#table-of-contents)
+
+## Hypothesis and how to validate
 
 To better understand what influences medical insurance costs, we propose the following hypotheses. Each hypothesis will be tested using appropriate analysis techniques to confirm or reject its validity.
 
@@ -42,6 +72,8 @@ To better understand what influences medical insurance costs, we propose the fol
 
 Each validated hypothesis will help the company better understand cost drivers and refine its pricing strategy accordingly.
 
+[Back to top](#table-of-contents)
+
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
 
 * **Business Requirement 1: Insights from Data**
@@ -53,6 +85,8 @@ Each validated hypothesis will help the company better understand cost drivers a
   * We will develop a machine learning model to predict insurance costs based on customer profiles.
   * We will create a user interface that allows users to input customer data and receive predicted insurance charges.
   * We will evaluate the model's performance and feature importance to ensure transparency and reliability.
+
+[Back to top](#table-of-contents)
 
 ## ML Business Case
 
@@ -73,6 +107,8 @@ Each validated hypothesis will help the company better understand cost drivers a
   * MAE (Mean Absolute Error): On average, predictions are within ~2,100–2,400 units of the actual charges.
   * MSE & RMSE: Low values and minimal difference between training and testing metrics show the model is not overfitting and is stable.
   * Balanced RMSE: Consistency between training and test RMSE means the model performs reliably across unseen data.
+
+[Back to top](#table-of-contents)
 
 ## Dashboard Design (Streamlit App User Interface)
 
@@ -109,9 +145,13 @@ Each validated hypothesis will help the company better understand cost drivers a
 * Feature importance
 * Pipeline performance
 
+[Back to top](#table-of-contents)
+
 ## Unfixed Bugs
 
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+* At the time of writing, there are no unfixed bugs within the project.
+
+[Back to top](#table-of-contents)
 
 ## Deployment
 
@@ -125,6 +165,8 @@ Each validated hypothesis will help the company better understand cost drivers a
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
+
+[Back to top](#table-of-contents)
 
 ## Important configuration files
 
@@ -145,6 +187,8 @@ enableCORS = false\n\
 web: sh setup.sh && streamlit run app.py
 ```
 
+[Back to top](#table-of-contents)
+
 ## Main Data Analysis and Machine Learning Libraries
 
 * [Pandas](https://pandas.pydata.org/docs/index.html) - Data analysis and manipulation tool
@@ -158,6 +202,8 @@ web: sh setup.sh && streamlit run app.py
 * [Kaggle](https://pypi.org/project/kaggle/) - Kaggle API functionalit
 * [Streamlit](https://streamlit.io/) - Build the web app.
 
+[Back to top](#table-of-contents)
+
 ## Credits
 
 ### Content
@@ -168,3 +214,5 @@ web: sh setup.sh && streamlit run app.py
 ### Media
 
 * Image for README file was taken from [FreePik](https://www.freepik.com/)
+
+[Back to top](#table-of-contents)
