@@ -1,13 +1,15 @@
 import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
-import pandas as pd
 from src.data_management import load_data, load_feature_engineering_data
+
 
 def app_correlation():
     st.title("Correlation Analysis")
-    st.info("This section provides correlation analysis between all features in the dataset to anwser **Business Requirement 1**. "
-            "The correlation method used is Pearson correlation coefficient, which measures the linear relationship between two variables.")
+    st.info("This section provides correlation analysis between all features "
+            "in the dataset to anwser **Business Requirement 1**. "
+            "The correlation method used is Pearson correlation coefficient, "
+            "which measures the linear relationship between two variables.")
 
     # Encode categorical variables
     df = load_data()
@@ -31,21 +33,28 @@ def app_correlation():
     # Analysis conclusions
     st.subheader("Correlation Conclusions")
     st.success("""
-    - **Smoker vs Charges**: Strong correlation - insurance charges tend to be higher if customer smokes.
-    - **Age vs Charges**: Moderate positive correlation – insurance charges tend to increase with age.
-    - **BMI vs Charges**: Weak correlation – BMI alone is not a strong indicator.
+    - **Smoker vs Charges**: Strong correlation - insurance charges tend
+                to be higher if customer smokes.
+    - **Age vs Charges**: Moderate positive correlation – insurance charges
+                tend to increase with age.
+    - **BMI vs Charges**: Moderate correlation – BMI alone is not a
+                strong indicator.
     - **Children vs Charges**: Very weak correlation.
-    
+    - **Regions vs Charges**: Very weak correlation.
+
     These are the correlations before feature engineering.
-    After feature engineering, the model will be able to capture more complex relationships.
+    After feature engineering, the model will be able to capture
+                more complex relationships.
     """)
 
     st.title("Correlation Analysis on Feature Engineered Data")
-    st.write("Underneath, there is a correlation analysis on the feature engineered dataset, used to train the model and make predictions.")
+    st.write("Underneath, there is a correlation analysis on the feature "
+             "engineered dataset, used to train the model and "
+             "make predictions.")
 
     # Load processed dataset
-    df = load_feature_engineering_data()  # custom function to load the transformed dataset
-    df_corr = df.select_dtypes(include=['int64', 'float64'])  # numeric only
+    df = load_feature_engineering_data()
+    df_corr = df.select_dtypes(include=['int64', 'float64'])
 
     # Compute correlation
     corr_matrix = df_corr.corr()
@@ -56,15 +65,20 @@ def app_correlation():
     fig, ax = plt.subplots(figsize=(12, 8))
     sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap="coolwarm", center=0)
     st.pyplot(fig)
-    
+
     # Generate conclusions
     st.subheader("Conclusions")
-    st.success("The correlation matrix show the linear correlation between each customer attribute and the insurance charges. " \
-    "As expected, smoking status has a strong influence on costs, showing a strong negative correlation "
-    "(meaning smokers tend to incur significantly higher charges). Age and BMI also show moderate " \
-    "positive correlations, suggesting older individuals and those with higher BMI tend to face higher " \
-    "costs. Other variables like region and sex appear to have less direct linear impact on charges, " \
-    "though they may still contribute in more complex ways to the final prediction model.")
+    st.success("The correlation matrix show the linear correlation between "
+               "each customer attribute and the insurance charges. "
+               "As expected, smoking status has a strong influence on costs,"
+               " showing a strong negative correlation (meaning smokers tend"
+               " to incur significantly higher charges). Age and BMI also"
+               " show moderate positive correlations, suggesting older "
+               "individuals and those with higher BMI tend to face higher "
+               "costs. Other variables like regionand sex appear to have "
+               "less direct linear impact on charges, though they "
+               "may still contribute in more complex ways to the final "
+               "prediction model.")
     st.markdown(generate_conclusions(charges_corr))
 
 
@@ -93,4 +107,3 @@ def generate_conclusions(corr_series, threshold_high=0.4, threshold_moderate=0.2
             conclusion += f"- `{feat}` (corr = {val:.2f})\n"
 
     return conclusion
-

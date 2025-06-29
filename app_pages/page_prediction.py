@@ -3,8 +3,8 @@ import pandas as pd
 from src.data_management import load_pkl_file, load_data
 from src.machine_learning.predict_insurance import predict_insurance
 
-def app_predict():
 
+def app_predict():
     # Load pipelines and features
     path = 'outputs/ml_pipelines/v1/'
     insurance_pipe_de_fe = load_pkl_file(
@@ -19,13 +19,16 @@ def app_predict():
 
     st.info(
         f"**Business Requirements 2: Accurate Cost Prediction**\n\n"
-        f"This page allows users to predict insurance charges based on customer information by providing a "
-        f"reliable way to estimate medical insurance costs using inputs such as age, lifestyle habits, and family details."
+        f"This page allows users to predict insurance charges based "
+        f"on customer information by providing a reliable way to estimate "
+        f"medical insurance costs using inputs such as age, lifestyle habits, "
+        f"and family details."
         )
 
     # Page title
     st.title("Predict Insurance Charges")
-    st.write("Enter customer information to estimate their medical insurance cost.")
+    st.write("Enter customer information to estimate their "
+             "medical insurance cost.")
 
     # Generate Live Data
     X_live = DrawInputsWidgets()
@@ -36,15 +39,16 @@ def app_predict():
         insurance_prediction = predict_insurance(
             X_live, insurance_features, insurance_pipe_de_fe,
             insurance_pipe_model)
-    
+
+
 def DrawInputsWidgets():
     """
     Draws input widgets for user to enter customer information.
-    
+
     Returns:
     - X_live: DataFrame containing the input features for prediction.
     """
-    
+
     # load data
     df = load_data()
 
@@ -78,10 +82,11 @@ def DrawInputsWidgets():
         st_widget = st.number_input(
             label=feature,
             value=24.0,
-            min_value= 16.1,
-            max_value= 55.1,
-            step= 0.1,
-            help="Body Mass Index (BMI) is a measure of body fat based on height and weight."
+            min_value=16.1,
+            max_value=55.1,
+            step=0.1,
+            help="Body Mass Index (BMI) is a measure of body "
+            "fat based on height and weight."
         )
     X_live[feature] = st_widget
 
@@ -89,7 +94,7 @@ def DrawInputsWidgets():
         feature = "children"
         st_widget = st.number_input(
             label=feature,
-            value= 0,
+            value=0,
             min_value=0,
             max_value=5,
             step=1
