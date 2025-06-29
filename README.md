@@ -29,6 +29,12 @@ Visit the live project here: [Medical Insurance Project](https://insurance-predi
     - [Heroku](#heroku)
   - [Important configuration files](#important-configuration-files)
   - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+  - [Testing](#testing)
+    - [Page 1: Quick Project Summary](#page-1-quick-project-summary-1)
+    - [Page 2: Project Hypotheses and Validation](#page-2-project-hypotheses-and-validation-1)
+    - [Page 3: Correlation Analysis](#page-3-correlation-analysis-1)
+    - [Page 4: Medical Insurance Charges Prediction](#page-4-medical-insurance-charges-prediction-1)
+    - [Page 5: Model Evaluation and Feature Importance](#page-5-model-evaluation-and-feature-importance-1)
   - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
@@ -141,6 +147,8 @@ Each validated hypothesis will help the company better understand cost drivers a
 - **User Story**: As a data scientist, I want to view feature importance rankings, So that I can explain to stakeholders why the model makes specific predictions.
 - **User Story**: As a user, I want the ability to change certain inputs (like smoking status or BMI) and see how it affects the premium, So that I can explore how lifestyle changes could lower my insurance cost.
 
+[Back to top](#table-of-contents)
+
 ## Dashboard Design (Streamlit App User Interface)
 
 ### Page 1: Quick Project Summary
@@ -232,6 +240,49 @@ web: sh setup.sh && streamlit run app.py
 * [Joblib](https://joblib.readthedocs.io/en/stable/) - Tool for dumping pipeline to pickle files
 * [Kaggle](https://pypi.org/project/kaggle/) - Kaggle API functionalit
 * [Streamlit](https://streamlit.io/) - Build the web app.
+
+[Back to top](#table-of-contents)
+
+## Testing
+
+The following table outlines manual tests performed to ensure that all five dashboard pages in the Streamlit application function as expected.
+
+### Page 1: Quick Project Summary
+
+| Feature | Action | Result |
+|---------|--------|-----------------|
+| Display of project overview and terms | Open the page and verify presence of project summary, dataset description, and business requirements | All content is rendered correctly without errors |
+| Navigation | Click the page tab or use sidebar to access | User is redirected to the Quick Project Summary |
+
+### Page 2: Project Hypotheses and Validation
+
+| Feature | Action | Result |
+|---------|--------|-----------------|
+| Hypotheses checkboxes | Toggle checkboxes for each hypothesis | Corresponding plots or visual insights appear/disappear based on checkbox status |
+| Hypotheses plots | Select each hypothesis one by one | Each plot matches the data claim and renders correctly |
+
+### Page 3: Correlation Analysis
+
+| Feature | Action | Result |
+|---------|--------|-----------------|
+| Initial correlation matrix | Load page and check if the pre-feature engineering heatmap appears | Correlation heatmap is displayed properly |
+| Post-feature engineering matrix | Scroll or toggle to display second heatmap | Engineered correlation heatmap renders with updated variables |
+| Correlation insights | Review written interpretation below matrix | Conclusions appear correctly and align with visual data |
+
+### Page 4: Medical Insurance Charges Prediction
+
+| Feature | Action | Result |
+|---------|--------|-----------------|
+| Input widgets for customer data | Fill in values for age, BMI, children, sex, region, and smoking status | Inputs are accepted and validated without breaking the form |
+| Run Prediction button | Click the prediction button after entering data | A predicted insurance charge is displayed below the button |
+
+### Page 5: Model Evaluation and Feature Importance
+
+| Feature | Action | Result |
+|---------|--------|-----------------|
+| Feature importance chart | View bar chart or visualization of feature impact | The chart is rendered and shows logical importance rankings |
+| Pipeline steps display | Review pipeline architecture or list | Model steps are shown in sequence and make sense |
+| Model performance metrics | Scroll to view R², MAE, RMSE, etc. | All metrics are clearly displayed and values match training results |
 
 [Back to top](#table-of-contents)
 
