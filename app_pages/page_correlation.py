@@ -31,6 +31,7 @@ def app_correlation():
     # Analysis conclusions
     st.subheader("Correlation Conclusions")
     st.success("""
+    - **Smoker vs Charges**: Strong correlation - insurance charges tend to be higher if customer smokes.
     - **Age vs Charges**: Moderate positive correlation – insurance charges tend to increase with age.
     - **BMI vs Charges**: Weak correlation – BMI alone is not a strong indicator.
     - **Children vs Charges**: Very weak correlation.
