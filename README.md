@@ -289,7 +289,7 @@ The following table outlines manual tests performed to ensure that all five dash
 
 ## Validation
 
-All code within the `app_pages` and `src` directories has been validated for PEP8 compliance using Code Institute’s PEP8 Linter.
+All code within the `app_pages`, `src` and `jupyter_notebooks` directories has been validated for PEP8 compliance using Code Institute’s PEP8 Linter.
 
 - A few files triggered warnings related to line length (long function parameters or URL links), which are not easily breakable without reducing code readability.
 - These warnings do not affect the functionality or performance of the application in any way.
